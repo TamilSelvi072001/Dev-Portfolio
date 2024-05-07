@@ -1,0 +1,50 @@
+.top-half{
+    min-height: 20vh;
+    text-align: center;
+    color: #BF8830;
+    font-family: cursive,sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-half{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.display-property{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-name{
+    color:#725C3F;
+    font-size: 36px;
+    font-weight: 600;
+}
+.about-me{
+    padding: 2rem 4rem 2rem 0;
+    font-size: 20px;
+}
+.my-photo{
+    zoom:0.8
+}
+.bottom-second-half{
+    margin: auto;
+}
+@keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.bottom-half {
+    animation: slideInFromBottom 1s ease-in-out;
+}

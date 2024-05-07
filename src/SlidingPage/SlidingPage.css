@@ -1,0 +1,28 @@
+.fade-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000; /* Background color */
+    overflow: hidden;
+  }
+  
+  .fade-background::after {
+    content: '';
+    position: absolute;
+    top: -100%; /* Start from the top */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    animation: fadeDown 3s forwards; /* Animation name and duration */
+  }
+  
+  @keyframes fadeDown {
+    0% {
+      top: -100%; /* Start from the top */
+    }
+    100% {
+      top: 100%; /* Fade to the bottom */
+    }
+  }
+  

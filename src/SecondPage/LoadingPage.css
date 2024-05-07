@@ -1,0 +1,85 @@
+.full-loading-page{
+    background-color: #725C3F;
+    min-height: 100vh;
+    font-family: cursive,sans-serif;
+    display: flex;
+   
+}
+.loading-info{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.rotating-curved-text {
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .container {
+    position: relative;
+  }
+  
+  .animated-text {
+    position: relative;
+  }
+  
+  .circle-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ff0000; /* Circle border color */
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    animation: circleFadeInOut 2s infinite; /* Animation name and duration */
+  }
+  
+  @keyframes circleFadeInOut {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 100px; /* Circle size */
+      height: 100px; /* Circle size */
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .loading-left{
+    flex:3
+  }
+  .loading-right{
+    flex:5
+  }
+  .exampleWrapperDiv{
+    right: 3%;
+    position: absolute;
+    top: 3%;
+  }
