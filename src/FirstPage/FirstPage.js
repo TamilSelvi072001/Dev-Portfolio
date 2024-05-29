@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./FirstPage.css";
+import Header from "../AppHeader/Header";
 
 const FirstPage = () => {
   return (
     <>
+    <Header />
       <div className="top-half">Hey Hi! Welcome:)</div>
       <div className="bottom-half">
         <div className="display-property">
