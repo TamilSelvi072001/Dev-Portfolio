@@ -5,7 +5,7 @@ const SecondPage=()=>{
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const timer = setTimeout(() => {
-          setLoading(false);
+          setLoading(true);
         }, 3000);
     
         return () => clearTimeout(timer);

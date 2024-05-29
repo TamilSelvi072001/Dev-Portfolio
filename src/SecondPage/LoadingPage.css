@@ -73,13 +73,15 @@
     }
   }
   .loading-left{
-    flex:3
+    flex:3;
+    padding:0rem 3rem;
   }
   .loading-right{
-    flex:5
+    flex:5;
+    padding:0rem 3rem;
   }
   .exampleWrapperDiv{
     right: 3%;
     position: absolute;
-    top: 3%;
+    top: 5%;
   }
