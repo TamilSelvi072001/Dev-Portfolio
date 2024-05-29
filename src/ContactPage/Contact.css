@@ -1,0 +1,11 @@
+.contact-page{
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-send-btn{
+    max-width: 5rem;
+}
