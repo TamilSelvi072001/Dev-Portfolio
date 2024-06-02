@@ -6,11 +6,15 @@ import Grid from "@mui/material/Grid";
 import Item from "antd/es/list/Item";
 import { Button, TextField } from "@mui/material";
 import "./Contact.css"
+import Header from "../AppHeader/Header";
 
 const Contact = () => {
   return (
-    <div className="contact-page">
+   <>
+      <Header />
+      <div className="contact-page">
       <div className="common-heading"> Got Any Question?</div>
+      <div className="contact-welcome-text">Interested in connecting? Send me the message, I'll get in touch with you shortly!</div>
       <Box sx={{ flexGrow: 4}} className="contact-container" >
         <Grid container spacing={2}>
           <Grid item xs={6}>
@@ -30,6 +34,7 @@ const Contact = () => {
       </Box>
       <button className="common-btn contact-send-btn">SEND</button>
     </div>
+    </>
   );
 };
 export default Contact;

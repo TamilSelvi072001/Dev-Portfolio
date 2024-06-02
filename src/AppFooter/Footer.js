@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid";
 import Item from "antd/es/list/Item";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Button, IconButton, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const Footer=()=>{
 return(
@@ -25,6 +27,7 @@ return(
           <Grid item xs={12}>
           </Grid>
         </Grid>
+        
       </Box>
 )
 }

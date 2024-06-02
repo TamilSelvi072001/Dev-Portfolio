@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './AppFooter/Footer';
+import Header from './AppHeader/Header';
 import AppRoute from './AppRoute';
 
 
